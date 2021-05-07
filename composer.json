@@ -1,0 +1,26 @@
+{
+    "name": "mohammadreza/web-server",
+    "description": "Simple PHP Web Server",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammadreza-73",
+            "email": "mohammadreza.rahimi93@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "WebServer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

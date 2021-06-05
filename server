@@ -1,3 +1,25 @@
 #!/usr/bin/env php
 <?php
 
+use WebServer\Server;
+use WebServer\Request;
+use WebServer\Response;
+
+require_once "vendor/autoload.php";
+
+array_shift($argv);
+
+if ( empty($argv) ) {
+    $port = 80;
+} else {
+    $port = array_shift($argv);
+}
+
+$server = new Server('127.0.0.1', $port);
+
+$server->socketListen( function(Request $request)
+{
+    echo $request->getMethod() . ' ' . $request->getUri() . "\n";
+
+    return new Response( '<pre>' . print_r($request, true) . '</pre>' );
+} );

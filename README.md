@@ -20,7 +20,7 @@ Start server just like this:
 $ sudo php server 8000
 ```
 And access it with your browser:
-```bash
+```.http
 http: localhost:8000/some-uri/?projcet=web-server
 ```
 **Note:** You can use any port you want.

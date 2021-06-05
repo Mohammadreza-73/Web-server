@@ -10,12 +10,17 @@ PHP is a scripting language that simply is not really designed for such tasks.
 4. The server responds to client.
 
 ## Usage
+Install dependencies in your directory
+```bash
+composer install
+```
+
 Start server just like this:
-```php
+```bash
 $ sudo php server 8000
 ```
 And access it with your browser:
-```php
+```bash
 http: localhost:8000/some-uri/?projcet=web-server
 ```
 **Note:** You can use any port you want.

@@ -24,3 +24,29 @@ And access it with your browser:
 http: localhost:8000/some-uri/?projcet=web-server
 ```
 **Note:** You can use any port you want.
+
+Output:
+```code
+WebServer\Request Object
+(
+    [method:WebServer\Request:private] => GET
+    [uri:WebServer\Request:private] => /some-uri?project=web-server
+    [headers:WebServer\Request:private] => Array
+        (
+            [Host] => localhost:8000
+            [User-Agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100102 Firefox/87.0
+            [Accept] => text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+            [Accept-Language] => en-US,en;q=0.5
+            [Accept-Encoding] => gzip, deflate
+            [Connection] => keep-alive
+            [Upgrade-Insecure-Requests] => 1
+        )
+
+    [params:WebServer\Request:private] => Array
+        (
+            [project] => web-server
+        )
+
+    [buffer_max_size] => 4096
+)
+```
